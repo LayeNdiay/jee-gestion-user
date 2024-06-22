@@ -8,7 +8,7 @@
 
 	<meta charset="ISO-8859-1">
 	<title>Gestion des utilisateurs</title>
-	<link rel="stylesheet" href="<c:url value='/css/design.css'/>">
+	<link rel="stylesheet" href="<c:url value='/css/style.css'/>">
 	<script src="<c:url value='/js/script.js'/>"></script>
 </head>
 <body>

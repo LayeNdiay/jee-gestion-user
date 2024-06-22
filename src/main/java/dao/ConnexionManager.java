@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConnexionManager {
-	public static String DB_URL = "jdbc:mysql://localhost:3306/gestionuser";
+	public static String DB_URL = "jdbc:mysql://localhost:3306/manageuser";
 	static String DB_USER = "root";
 	static String DB_PASSWORD = "";
 
@@ -16,7 +16,7 @@ public class ConnexionManager {
 			connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
 			System.out.println("Connected successfully!");
 		} catch (ClassNotFoundException e) {
-			System.out.println("Error while connecting! " + e.getMessage());
+			System.out.println("Error while connecting !" + e.getMessage());
 		} catch (SQLException e) {
 			System.out.println("Erreur de connexion : " + e.getMessage());
 		}
@@ -25,15 +25,14 @@ public class ConnexionManager {
 
 	public static void main(String[] args) {
 		Connection connexion = getInstance();
-		if (connexion != null) {
-			System.out.println("Connexion réussie");
-			try {
-				connexion.close();
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
-		} else {
-			System.out.println("Connexion échouée");
+		System.out.println(connexion);
+		System.out.println("Connexion r�ussie");
+		try {
+			connexion.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
+
 }

@@ -1,4 +1,4 @@
 function confirmSuppression() 
 {
-	return confirm("En êtes vous sûr ?");
+	return confirm("En Ãªtes vous sÃ»r ?");
 }

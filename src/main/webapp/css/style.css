@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+}
+
+#entete, #menu, #pied, #corps {
+    width: 100%;
+    margin: 0;
+}
+
+#entete, #menu, #pied, #menu li a {
+    color: #ffffff;
+    text-align: center;
+}
+
+#entete {
+    position: absolute;
+    height: 11%;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: "Agency FB", sans-serif;
+    background-color: #004d99; /* New color */
+}
+
+#menu {
+    position: absolute;
+    height: 6%;
+    left: 0;
+    top: 11%;
+    border-top: solid 2px #ffffff;
+    background-color: #004d99; /* New color */
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#menu li {
+    display: inline-block;
+    border-left: solid 2px #ffffff;
+    padding: 10px;
+    height: 100%;
+}
+
+#menu li:last-child {
+    border-right: solid 2px #ffffff;
+}
+
+#menu li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #f0f0f0; /* New color */
+}
+
+#corps {
+    position: absolute;
+    height: 80%;
+    left: 0;
+    top: 17%;
+    padding: 0 5px;
+    overflow: auto;
+}
+
+#pied {
+    position: absolute;
+    height: 6%;
+    left: 0;
+    top: 94%;
+    padding-top: 5px;
+    background-color: #004d99; /* New color */
+}
+
+#titre-principal {
+    text-align: center;
+    font-family: "Agency FB", sans-serif;
+}
+
+table {
+    width: fit-content;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #f9f9f9; /* New background color */
+    border: solid 1px #ccc; /* New border color */
+}
+
+th, td {
+    border: solid 1px #ccc; /* New border color */
+    padding: 10px; /* Increased padding */
+    text-align: left; /* Align text to the left */
+}
+
+tr:nth-child(even) {
+    background-color: #e6f7ff; /* New row color for even rows */
+}
+
+tr:first-child {
+    border: solid 1px #00354f; /* Updated border color */
+    color: #ffffff;
+    background-color: #005c99; /* New background color */
+}
+
+form {
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+    border: outset 2px #999; /* New border color */
+}
+
+.formItem {
+    margin-bottom: 20px; /* Added margin for spacing */
+    text-align: left; /* Align text to the left */
+}
+
+.formItem label {
+    display: block; /* Ensure label is on its own line */
+    margin-bottom: 5px; /* Added margin for spacing */
+    font-size: 1.2em;
+}
+
+.formItem input[type="text"], .formItem input[type="password"] {
+    width: calc(100% - 20px); /* Adjust width to match container */
+    padding: 10px; /* Added padding */
+    border: 1px solid #666; /* New border color */
+    border-radius: 10px;
+}
+
+.formItem input[type="submit"] {
+    display: block;
+    width: 100%; /* Full width for submit button */
+    padding: 10px; /* Adjust padding for better look */
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #004d99; /* New background color */
+    border: double 3px #666; /* New border color */
+    border-radius: 10px;
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.formItem span.erreur {
+    color: #dc3545; /* New error color */
+    display: block; /* Ensure span is on its own line */
+    margin-top: 5px; /* Added margin for spacing */
+}
+
+.messageBox {
+    width: 50%;
+    margin: auto;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 1.2em;
+}
+
+#statusMessage {
+    border-radius: 1px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-size: 1.2em;
+}
+
+.succes {
+    color: #28a745; /* New success color */
+    text-align: center;
+}
+
+.erreur {
+    color: #dc3545; /* New error color */
+}
+
+#auth {
+    text-align: center;
+    margin: auto;
+}
+
+table tr td a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #004d99; /* New link color */
+}

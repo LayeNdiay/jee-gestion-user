@@ -1,11 +1,11 @@
 package forms;
 
+import beans.Utilisateur;
+import dao.UtilisateurDao;
 import java.util.HashMap;
 import java.util.Map;
 
-import beans.Utilisateur;
-import dao.UtilisateurDao;
-import jakarta.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequest;
 
 public class AddUserForm {
 	// Constantes
@@ -42,14 +42,14 @@ public class AddUserForm {
 
 		if (erreurs.isEmpty()) {
 			status = true;
-			statusMessage = "L'ajout a ï¿½tï¿½ effectuï¿½ avec succï¿½s";
+			statusMessage = "L'ajout a été effectué avec succès";
 			UtilisateurDao.ajouter(utilisateur);
 
 		}
 
 		else {
 			status = false;
-			statusMessage = "L'ajout a ï¿½chouï¿½ ! Rï¿½essayer";
+			statusMessage = "L'ajout a échoué ! Réessayer";
 
 		}
 
